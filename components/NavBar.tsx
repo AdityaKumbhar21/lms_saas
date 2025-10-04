@@ -16,11 +16,10 @@ const Navbar = () => {
                     />
                 </div>
             </Link>
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-8 ml-auto">
                 <NavItems />
                 <p>Sign In</p> 
             </div>
-             
         </nav>
     )
 }
