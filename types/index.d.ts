@@ -35,7 +35,7 @@ interface CreateCompanion {
   duration: number;
 }
 
-interface GetAllCompanions {
+export interface GetAllCompanions {
   limit?: number;
   page?: number;
   subject?: string | string[];

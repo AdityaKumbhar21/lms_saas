@@ -3,6 +3,7 @@ import CompanionCard from "@/components/CompanionCard";
 import Cta from '@/components/CTA';
 import CompanionsList from '@/components/CompanionList';
 import { recentSessions } from '@/constants';
+import { getSubjectColor } from '@/lib/utils';
 
 const Page = async () => {
 
@@ -16,9 +17,9 @@ const Page = async () => {
                     id="1"
                     name="Companion 1"
                     topic="Topic 1"
-                    subject="Subject 1"
+                    subject="Science"
                     duration={30}
-                    color="#f0f0f0"
+                    color={getSubjectColor("science")}
                     bookmarked={false}
                 />
                 <CompanionCard 
@@ -27,7 +28,7 @@ const Page = async () => {
                     topic="Topic 1"
                     subject="Subject 1"
                     duration={30}
-                    color="#f0f0f0"
+                    color={getSubjectColor("maths")}
                     bookmarked={false}
                 />
                 <CompanionCard 
@@ -36,7 +37,7 @@ const Page = async () => {
                     topic="Topic 1"
                     subject="Subject 1"
                     duration={30}
-                    color="#f0f0f0"
+                    color= {getSubjectColor("language")}
                     bookmarked={false}
                 />
             
